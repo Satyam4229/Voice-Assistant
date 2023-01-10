@@ -94,12 +94,11 @@ if __name__ == "__main__":
 
         elif 'play music' in query:
             speak('Playing Music....')
-            music_dir = 'C:\\Users\\User\\Music\\Music'  # apni music directory daal lio
+            music_dir = 'C:\\Users\\User\\Music\\Music'
             songs = os.listdir(music_dir)
             print(songs)
             n = random.randint(0, 335)
-            os.startfile(os.path.join(music_dir, songs[n]))  # song choose kr skti hai yha se ya fir random library se
-            # random value bhi select kr skti hai
+            os.startfile(os.path.join(music_dir, songs[n]))
 
         elif 'the time' in query:
             strTime = datetime.datetime.now().strftime("%H:%M:%S")
@@ -107,17 +106,13 @@ if __name__ == "__main__":
 
         elif 'open code' in query:
             speak('Opening VS Code.....')
-            codePath = "C:\\Users\\User\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"  # apna path daal lio
+            codePath = "C:\\Users\\User\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe" 
             os.startfile(codePath)
 
         elif 'open microsoft edge' in query:
             speak('Opening Microsoft Edge....')
-            edgePath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"  # apna path daal lio
+            edgePath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"  
             os.startfile(edgePath)
-
-        # tu kuch bhi bulva skti hai isse just ek keyword set krke
-        elif 'hello' in query:
-            speak("hii shruti kaushik, my boss used to say you tuti and he love you so so sooooooo much..")
 
         elif 'your name' in query:
             speak("I am olivia, A virtual assistant of yours..")
