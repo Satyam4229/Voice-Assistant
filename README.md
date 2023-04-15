@@ -1,4 +1,4 @@
-# Virtual-Assistant
+# Voice-Assistant
 The voice assistant created using Python with various Google APIs and Python libraries is a virtual assistant that can perform various tasks on your system and interact with you using voice commands.
 
 ## The description of the voice assistant may include the following details:
